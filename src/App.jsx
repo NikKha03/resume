@@ -74,52 +74,6 @@ function App() {
               </div>
             </header>
 
-            {/* <section className="resume-section">
-              <h2 className="resume-section-title">Опыт работы</h2>
-              <div className="resume-job">
-                <div className="resume-job-header">
-                  <h3 className="resume-job-company">ООО «Эконом»</h3>
-                  <span className="resume-job-period">Май 2017 — н.в.</span>
-                </div>
-                <p className="resume-job-title">Интернет-маркетолог</p>
-                <ul className="resume-list">
-                  <li>Разработка маркетинговых планов</li>
-                  <li>Управление рекламными бюджетами</li>
-                  <li>
-                    Стратегическое планирование и оценка эффективности проектов
-                  </li>
-                  <li>
-                    Анализ целевой аудитории, конкурентов и рыночных тенденций
-                  </li>
-                  <li>Настройка рекламных кампаний в поисковых системах</li>
-                  <li>Контроль и анализ результатов рекламных кампаний</li>
-                  <li>Управление командой из 3 человек</li>
-                </ul>
-                <p className="resume-achievements-title">
-                  Достижения за последние 2 года
-                </p>
-                <ul className="resume-list">
-                  <li>Рост конверсии сайта компании на 35%</li>
-                  <li>Увеличение органического трафика на 150% за 20+</li>
-                  <li>Увеличение социальных медиа на 38%</li>
-                </ul>
-              </div>
-
-              <div className="resume-job">
-                <div className="resume-job-header">
-                  <h3 className="resume-job-company">Фрилансер</h3>
-                  <span className="resume-job-period">
-                    Ноябрь 2015 — Апрель 2017
-                  </span>
-                </div>
-                <ul className="resume-list">
-                  <li>Написание текстов</li>
-                  <li>Ведение рекламных площадок</li>
-                  <li>Консультирование малого и среднего бизнеса</li>
-                </ul>
-              </div>
-            </section> */}
-
             <section className="resume-section">
               <h2 className="resume-section-title">Образование</h2>
               <div className="resume-education">
@@ -133,9 +87,12 @@ function App() {
               </div>
             </section>
 
-            <section className="resume-section">
+            <section
+              className="resume-section"
+              style={{ marginBottom: '1rem' }}
+            >
               <h2 className="resume-section-title">Навыки</h2>
-              <div className="resume-course">
+              <div className="resume-skills">
                 <div className="resume-course-header">
                   <h3 className="resume-course-name">Programmer skils:</h3>
                 </div>
@@ -147,7 +104,7 @@ function App() {
                 <div className="resume-course-header">
                   <h3 className="resume-course-name">Backend skils:</h3>
                 </div>
-                {skill(skills[2], 0)}
+                {skill(skills[2])}
               </div>
             </section>
 
@@ -168,30 +125,6 @@ function App() {
                 </p>
               </div>
             </section>
-
-            {/* <section className="resume-section">
-              <h2 className="resume-section-title">Курсы</h2>
-              <div className="resume-course">
-                <div className="resume-course-header">
-                  <h3 className="resume-course-name">
-                    Нетология Центр «Профессия»
-                  </h3>
-                  <span className="resume-course-year">2018</span>
-                </div>
-                <p className="resume-details">Таргетированная реклама</p>
-              </div>
-            </section> */}
-
-            {/* <section className="resume-section">
-              <h2 className="resume-section-title">Рекомендации</h2>
-              <div className="resume-reference">
-                <p className="resume-reference-name">Сергей Петрович</p>
-                <p className="resume-reference-position">
-                  ООО «Эконом», руководитель отдела маркетинга
-                </p>
-                <p className="resume-reference-contact">+7 (999) 000-00-00</p>
-              </div>
-            </section> */}
           </div>
 
           {/* Right section */}
