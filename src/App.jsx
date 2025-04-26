@@ -3,7 +3,7 @@ import './App.css';
 
 const skills = [
   ['Git', 'Docker', 'Linux'],
-  ['JavaScript', 'React', 'HTML', 'CSS'],
+  ['JavaScript', 'React', 'HTML', 'CSS', 'Figma', 'Node.js', 'Nginx'],
   ['Java', 'Spring', 'PostgreSQL', 'Keycloak', 'REST API', 'Микросервисы'],
 ];
 
