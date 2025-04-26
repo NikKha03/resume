@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
 
 const skills = [
@@ -71,7 +69,7 @@ function App() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span>Возраст: 21 года</span>
+                  <span>Возраст: 21 год</span>
                 </div>
               </div>
             </header>
