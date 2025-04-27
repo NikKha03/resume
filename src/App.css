@@ -1,7 +1,10 @@
+html {
+  background-color: #f9fafb;
+}
+
 .resume-container {
   min-height: 100vh;
   height: 100%;
-  background-color: #f9fafb;
   padding: 1rem 1rem;
   font-family: Arial, sans-serif;
   line-height: 1.5;
@@ -222,14 +225,14 @@
 
 /* Sidebar section styles */
 .resume-sidebar-section {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .resume-sidebar-title {
   font-size: 1.125rem;
   font-weight: 700;
   color: #111827;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 /* Contact styles */
@@ -319,8 +322,4 @@
 .resume-about {
   font-size: 0.875rem;
   margin: 0;
-}
-
-.pb-0 {
-  padding-bottom: 0;
 }

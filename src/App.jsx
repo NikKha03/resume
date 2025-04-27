@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './App.css';
 
 const skills = [
@@ -7,7 +6,7 @@ const skills = [
   ['Java', 'Spring', 'PostgreSQL', 'Keycloak', 'REST API', 'Микросервисы'],
 ];
 
-const skill = (arr, mb = null) => {
+const skill = (arr) => {
   return (
     <div style={{ display: 'flex', width: '100%', flexWrap: 'wrap' }}>
       {arr.map((skill, i) => (
@@ -20,7 +19,6 @@ const skill = (arr, mb = null) => {
             marginRight: '0.5rem',
             padding: '0.25rem 0.375rem',
             borderRadius: '0.25rem',
-            marginBottom: mb,
           }}
         >
           {skill}
@@ -30,9 +28,7 @@ const skill = (arr, mb = null) => {
   );
 };
 
-function App() {
-  const [language, setLanguage] = useState('ru');
-
+export default function App() {
   return (
     <div className="resume-container">
       <div className="resume-wrapper">
@@ -83,7 +79,10 @@ function App() {
                   </h3>
                   <span className="resume-education-year">2021 - 2025</span>
                 </div>
-                <p className="resume-details">ИСАУ, Прикладная информатика</p>
+                <p className="resume-details">
+                  ИСАУ, Прикладная информатика в управлении корпоративными
+                  системами.
+                </p>
               </div>
             </section>
 
@@ -107,6 +106,27 @@ function App() {
                 {skill(skills[2])}
               </div>
             </section>
+
+            {/* <section
+              className="resume-section"
+              style={{ marginBottom: '1rem' }}
+            >
+              <h2 className="resume-section-title">Навыки</h2>
+              <div className="resume-skills">
+                <div className="resume-course-header">
+                  <h3 className="resume-course-name">Programmer skils:</h3>
+                </div>
+                {skill(skills[0])}
+                <div className="resume-course-header">
+                  <h3 className="resume-course-name">Frontend skils:</h3>
+                </div>
+                {skill(skills[1])}
+                <div className="resume-course-header">
+                  <h3 className="resume-course-name">Backend skils:</h3>
+                </div>
+                {skill(skills[2])}
+              </div>
+            </section> */}
 
             <section className="resume-section">
               <h2 className="resume-section-title">
@@ -153,34 +173,19 @@ function App() {
                   <span>+7 916-208-45-15</span>
                 </div>
                 <div className="resume-contact-item">
-                  <svg
-                    className="resume-contact-icon"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
+                  <svg className="resume-contact-icon" viewBox="0 0 20 20">
                     <path
-                      fillRule="evenodd"
-                      d="M14.243 5.757a6 6 0 10-8.486 8.486 6 6 0 008.486-8.486zm-1.414 1.414a4 4 0 11-5.657 5.657 4 4 0 015.657-5.657z"
-                      clipRule="evenodd"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      d="M7.5 9a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z"
-                      clipRule="evenodd"
+                      fill="currentColor"
+                      d="M3.87 4h13.25C18.37 4 19 4.59 19 5.79v8.42c0 1.19-.63 1.79-1.88 1.79H3.87c-1.25 0-1.88-.6-1.88-1.79V5.79c0-1.2.63-1.79 1.88-1.79m6.62 8.6l6.74-5.53c.24-.2.43-.66.13-1.07c-.29-.41-.82-.42-1.17-.17l-5.7 3.86L4.8 5.83c-.35-.25-.88-.24-1.17.17c-.3.41-.11.87.13 1.07z"
                     />
                   </svg>
                   <span>nik.kh.03@yandex.ru</span>
                 </div>
                 <div className="resume-contact-item">
-                  <svg
-                    className="resume-contact-icon"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
+                  <svg className="resume-contact-icon" viewBox="0 0 32 32">
                     <path
-                      fillRule="evenodd"
-                      d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
-                      clipRule="evenodd"
+                      fill="currentColor"
+                      d="M16 .5C7.437.5.5 7.438.5 16S7.438 31.5 16 31.5c8.563 0 15.5-6.938 15.5-15.5S24.562.5 16 .5m7.613 10.619l-2.544 11.988c-.188.85-.694 1.056-1.4.656l-3.875-2.856l-1.869 1.8c-.206.206-.381.381-.781.381l.275-3.944l7.181-6.488c.313-.275-.069-.431-.482-.156l-8.875 5.587l-3.825-1.194c-.831-.262-.85-.831.175-1.231l14.944-5.763c.694-.25 1.3.169 1.075 1.219z"
                     />
                   </svg>
                   <span>
@@ -197,6 +202,21 @@ function App() {
                   Готов к стажировке. После окончания университета планирую
                   начать работу на полную ставку.
                 </p>
+              </div>
+
+              <h2 className="resume-sidebar-title">Социальные сети</h2>
+              <div className="resume-contacts">
+                <div className="resume-contact-item">
+                  <svg className="resume-contact-icon" viewBox="0 0 16 16">
+                    <path
+                      fill="currentColor"
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59c.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49c-2.01.37-2.53-.49-2.69-.94c-.09-.23-.48-.94-.82-1.13c-.28-.15-.68-.52-.01-.53c.63-.01 1.08.58 1.23.82c.72 1.21 1.87.87 2.33.66c.07-.52.28-.87.51-1.07c-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15c-.08-.2-.36-1.02.08-2.12c0 0 .67-.21 2.2.82c.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82c.44 1.1.16 1.92.08 2.12c.51.56.82 1.27.82 2.15c0 3.07-1.87 3.75-3.65 3.95c.29.25.54.73.54 1.48c0 1.07-.01 1.93-.01 2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                    />
+                  </svg>
+                  <span>
+                    <a href="https://github.com/NikKha03">NikKha03</a>
+                  </span>
+                </div>
               </div>
             </section>
 
@@ -233,5 +253,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
