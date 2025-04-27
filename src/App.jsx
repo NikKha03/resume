@@ -145,6 +145,40 @@ export default function App() {
                 </p>
               </div>
             </section>
+
+            <section className="resume-section">
+              <h2 className="resume-section-title">Достижения</h2>
+              <div className="resume-education">
+                <div className="resume-education-header">
+                  <h3 className="resume-education-school">
+                    <a
+                      style={{ color: 'black' }}
+                      target="_blank"
+                      href="https://disk.yandex.ru/i/3B5hABkS6LmFTw"
+                    >
+                      ХАКАТОН IT-ЦИФРА.ZONE
+                    </a>
+                  </h3>
+                  <span className="resume-education-year">2024</span>
+                </div>
+                <p className="resume-details">ОЭЗ "Дубна", Хакатон</p>
+              </div>
+              <div className="resume-education">
+                <div className="resume-education-header">
+                  <h3 className="resume-education-school">
+                    <a
+                      style={{ color: 'black' }}
+                      target="_blank"
+                      href="https://disk.yandex.ru/i/Dj3Yc1U5WNhfTg"
+                    >
+                      НАВИГАТОР ИННОВАТОРА{' '}
+                    </a>
+                  </h3>
+                  <span className="resume-education-year">2022</span>
+                </div>
+                <p className="resume-details">Сколково, Предпринимательство</p>
+              </div>
+            </section>
           </div>
 
           {/* Right section */}
@@ -189,7 +223,9 @@ export default function App() {
                     />
                   </svg>
                   <span>
-                    <a href="https://t.me/kolya_kha">@kolya_kha</a>
+                    <a target="_blank" href="https://t.me/kolya_kha">
+                      @kolya_kha
+                    </a>
                   </span>
                 </div>
               </div>
@@ -214,7 +250,9 @@ export default function App() {
                     />
                   </svg>
                   <span>
-                    <a href="https://github.com/NikKha03">NikKha03</a>
+                    <a target="_blank" href="https://github.com/NikKha03">
+                      NikKha03
+                    </a>
                   </span>
                 </div>
               </div>
