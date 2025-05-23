@@ -152,7 +152,7 @@ export default function App() {
                 <div className="resume-education-header">
                   <h3 className="resume-education-school">
                     <a
-                      style={{ color: 'black' }}
+                      style={{ fontWeight: '500' }}
                       target="_blank"
                       href="https://disk.yandex.ru/i/3B5hABkS6LmFTw"
                     >
@@ -167,11 +167,11 @@ export default function App() {
                 <div className="resume-education-header">
                   <h3 className="resume-education-school">
                     <a
-                      style={{ color: 'black' }}
+                      style={{ fontWeight: '500' }}
                       target="_blank"
                       href="https://disk.yandex.ru/i/Dj3Yc1U5WNhfTg"
                     >
-                      НАВИГАТОР ИННОВАТОРА{' '}
+                      НАВИГАТОР ИННОВАТОРА
                     </a>
                   </h3>
                   <span className="resume-education-year">2022</span>
