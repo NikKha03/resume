@@ -41,7 +41,7 @@ export default function AchievementsComponent() {
 					{id === 2 && <Modal.Title>НАВИГАТОР ИННОВАТОРА</Modal.Title>}
 				</Modal.Header>
 
-				<Modal.Body>
+				<Modal.Body style={{ display: 'flex', justifyContent: 'center' }}>
 					{id === 1 && <img className='scan' src='/hackaton.png' alt='ХАКАТОН IT-ЦИФРА.ZONE' />}
 					{id === 2 && <img className='scan' src='/sk.png' alt='НАВИГАТОР ИННОВАТОРА' />}
 				</Modal.Body>

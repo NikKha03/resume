@@ -10,13 +10,13 @@ export function EducationComponent() {
 					<p className='resume-details'>
 						<i>Бакалавриат.</i> ИСАУ, Прикладная информатика в управлении корпоративными системами.
 					</p>
-					<span className='resume-education-year min-w86'>2021 - 2025</span>
+					<span className='resume-education-year min-w112'>2021 - 2025</span>
 				</div>
 				<div className='direction'>
 					<p className='resume-details'>
 						<i>Магистратура.</i> ИСАУ, Прикладная информатика. Искусственный Интеллект в системах управления.
 					</p>
-					<span className='resume-education-year min-w86'>2025 - 2027</span>
+					<span className='resume-education-year min-w112'>2025 - 2027</span>
 				</div>
 			</div>
 		</section>

@@ -5,7 +5,7 @@ html {
 .resume-container {
 	min-height: 100vh;
 	height: 100%;
-	padding: 1rem 1rem;
+	padding: 1rem;
 	font-family: Arial, sans-serif;
 	line-height: 1.5;
 }
@@ -30,7 +30,7 @@ html {
 
 /* Main content (left column) */
 .resume-main-content {
-	padding: 1.75rem;
+	padding: 1rem;
 	flex: 3;
 }
 
@@ -155,12 +155,12 @@ html {
 
 .resume-education-year {
 	color: #4b5563;
-	margin-left: 1.25rem;
-	text-align: center;
+	margin-left: 0.5rem;
 }
 
-.min-w86 {
-	min-width: 86px;
+.min-w112 {
+	text-align: right;
+	min-width: 112px;
 }
 
 /* Course styles */

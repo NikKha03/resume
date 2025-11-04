@@ -8,11 +8,11 @@ export default function WorkExperienceComponent() {
 				</div>
 				<div className='direction'>
 					<p className='resume-details'>Младший веб-программист</p>
-					<span className='resume-education-year min-w86'>окт. 2025 - н. в.</span>
+					<span className='resume-education-year min-w112'>окт. 2025 - н. в.</span>
 				</div>
 				<div className='direction'>
 					<p className='resume-details'>Стажер веб-программист</p>
-					<span className='resume-education-year min-w86'>май 2025</span>
+					<span className='resume-education-year min-w112'>май 2025</span>
 				</div>
 			</div>
 		</section>
