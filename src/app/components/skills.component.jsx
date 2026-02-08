@@ -1,7 +1,7 @@
 const skills = [
-	['Git', 'Docker', 'Linux'],
-	['JavaScript', 'TypeScript', 'Angular', 'React', 'HTML', 'CSS', 'Figma', 'Nginx'],
-	['Java', 'Spring', 'Node.js', 'PostgreSQL', 'Keycloak', 'REST API', 'Микросервисы'],
+	['Git', 'Docker', 'Nginx', 'Linux'],
+	['JavaScript', 'TypeScript', 'Angular', 'React', 'HTML', 'CSS', 'Figma'],
+	['Node.js', 'Java', 'Spring Boot', 'PostgreSQL', 'Keycloak', 'REST API', 'Микросервисы'],
 ];
 
 const skill = arr => {

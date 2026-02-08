@@ -11,13 +11,15 @@ export default function AchievementsComponent() {
 		setShow(true);
 	};
 
+	const headerStyle = { fontWeight: '500', cursor: 'pointer', color: '#0d6efd', textDecoration: 'underline' };
+
 	return (
 		<>
 			<section className='resume-section'>
 				<h2 className='resume-section-title'>Достижения</h2>
 				<div>
 					<div className='resume-education-header'>
-						<h3 onClick={() => handleShow(1)} style={{ fontWeight: '500', color: '#0d6efd', textDecoration: 'underline' }} className='block-name'>
+						<h3 onClick={() => handleShow(1)} style={headerStyle} className='block-name'>
 							ХАКАТОН IT-ЦИФРА.ZONE
 						</h3>
 						<span className='resume-education-year'>2024</span>
@@ -26,7 +28,7 @@ export default function AchievementsComponent() {
 				</div>
 				<div>
 					<div className='resume-education-header'>
-						<h3 onClick={() => handleShow(2)} style={{ fontWeight: '500', color: '#0d6efd', textDecoration: 'underline' }} className='block-name'>
+						<h3 onClick={() => handleShow(2)} style={headerStyle} className='block-name'>
 							НАВИГАТОР ИННОВАТОРА
 						</h3>
 						<span className='resume-education-year'>2022</span>

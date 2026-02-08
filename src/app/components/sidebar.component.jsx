@@ -11,12 +11,11 @@ export default function SidebarComponent() {
 			<section className='resume-sidebar-section'>
 				<h2 className='resume-sidebar-title'>Контакты</h2>
 				<div className='resume-contacts'>
-					<div className='resume-contact-item'>
+					{/* <div className='resume-contact-item'>
 						<svg className='resume-contact-icon' fill='currentColor' viewBox='0 0 20 20'>
 							<path d='M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z' />
 						</svg>
-						<span>+7 916-208-45-15</span>
-					</div>
+					</div> */}
 					<div className='resume-contact-item'>
 						<svg className='resume-contact-icon' viewBox='0 0 20 20'>
 							<path
@@ -46,7 +45,7 @@ export default function SidebarComponent() {
 								<p>Готов к стажировке. После окончания университета планирую начать работу на полную ставку.</p>
 							</div> */}
 
-				<h2 className='resume-sidebar-title'>Социальные сети</h2>
+				<h2 className='resume-sidebar-title'>Мои проекты</h2>
 				<div className='resume-contacts'>
 					<div className='resume-contact-item'>
 						<svg className='resume-contact-icon' viewBox='0 0 16 16'>

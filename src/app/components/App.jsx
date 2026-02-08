@@ -6,10 +6,37 @@ import SidebarComponent from './sidebar.component';
 import SkillsComponent from './skills.component';
 import WorkExperienceComponent from './work-experience.component';
 
-export default function App() {
-	let date = new Date();
-	let formattedDate = date.toLocaleDateString('ru-RU');
+const calculateAge = () => {
+	const today = new Date();
+	const birthday = new Date('2003-11-06');
+	let age = today.getFullYear() - birthday.getFullYear();
+	const monthDiff = today.getMonth() - birthday.getMonth();
+	// Корректировка, если день рождения в этом году еще не наступил
+	if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthday.getDate())) {
+		age--;
+	}
+	return age;
+}
 
+const formattedAge = () => {
+	const n = calculateAge();
+
+	const lastTwo = n % 100;
+	const last = n % 10;
+
+	if (lastTwo >= 11 && lastTwo <= 14) {
+		return `${n} лет`;
+	}
+	if (last === 1) {
+		return `${n} год`;
+	}
+	if (last >= 2 && last <= 4) {
+		return `${n} года`;
+	}
+	return `${n} лет`;
+}
+
+export default function App() {
 	return (
 		<div className='resume-container'>
 			<div className='resume-wrapper'>
@@ -34,7 +61,7 @@ export default function App() {
 											clipRule='evenodd'
 										/>
 									</svg>
-									<span>Возраст: 21 год</span>
+									<span>{`Возраст: ${formattedAge()}`}</span>
 								</div>
 							</div>
 						</header>
