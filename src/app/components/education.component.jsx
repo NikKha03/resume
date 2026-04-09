@@ -12,6 +12,7 @@ export function EducationComponent() {
 					</p>
 					<span className='resume-education-year min-w112'>2021 - 2025</span>
 				</div>
+				<a id="mention" target="_blank" href="https://vk.com/wall-115982637_13493">Упоминание дипломной работы в ВК сообществе университета <img src="/link.svg"></img> </a>
 				{/* <div className='direction'>
 					<p className='resume-details'>
 						<i>Магистратура.</i> ИСАУ, Прикладная информатика. Искусственный Интеллект в системах управления.

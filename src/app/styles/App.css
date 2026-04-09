@@ -347,3 +347,11 @@ html {
 	width: 100%;
 	max-width: 81vw;
 }
+
+#mention {
+	font-size: 14px;
+	font-style: italic;
+	cursor: pointer; 
+	color: #0d6efd; 
+	text-decoration: none;
+}
