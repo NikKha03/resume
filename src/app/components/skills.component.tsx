@@ -31,18 +31,24 @@ export default function SkillsComponent() {
         <section className="resume-section">
             <h2 className="resume-section-title">Навыки</h2>
             <div className="resume-skills">
-                <div className="block">
-                    <h3 className="block-name">Общие:</h3>
+                <div>
+                    <div className="block">
+                        <h3 className="block-name">Общие:</h3>
+                    </div>
+                    {skill(skills[0])}
                 </div>
-                {skill(skills[0])}
-                <div className="block">
-                    <h3 className="block-name">Frontend:</h3>
+                <div>
+                    <div className="block">
+                        <h3 className="block-name">Frontend:</h3>
+                    </div>
+                    {skill(skills[1])}
                 </div>
-                {skill(skills[1])}
-                <div className="block">
-                    <h3 className="block-name">Backend:</h3>
+                <div>
+                    <div className="block">
+                        <h3 className="block-name">Backend:</h3>
+                    </div>
+                    {skill(skills[2])}
                 </div>
-                {skill(skills[2])}
             </div>
         </section>
     );
