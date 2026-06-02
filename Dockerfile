@@ -1,20 +1,17 @@
-# Стадия сборки
-FROM node:20.9.0-alpine AS build
+FROM node:20.9.0-alpine AS builder
 WORKDIR /app
 COPY ./package.json .
 RUN npm install
 COPY . .
 RUN npm run build
 
-# Стадия запуска (nginx)
-FROM nginx:alpine
+FROM node:20.9.0-alpine AS runner
+WORKDIR /app
 
-# Копируем собранные файлы из предыдущей стадии
-COPY --from=build /app/dist /usr/share/nginx/html
-
-# Копируем конфиг nginx (если он у тебя есть)
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=builder /app/.next/standalone ./
+COPY --from=builder /app/.next/static ./.next/static
+COPY --from=builder /app/public ./public
 
 EXPOSE 80
 
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["node", "server.js"]
