@@ -12,6 +12,7 @@ COPY --from=builder /app/.next/standalone ./
 COPY --from=builder /app/.next/static ./.next/static
 COPY --from=builder /app/public ./public
 
+ENV PORT=80
 EXPOSE 80
 
 CMD ["node", "server.js"]

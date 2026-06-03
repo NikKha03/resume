@@ -16,7 +16,7 @@ export default function AchievementsComponent() {
     };
 
     const achievements = [
-        { id: 3, title: 'АЛЬФА ЦТФ', description: 'Альфа-Банк, Спортивный хакинг', year: '2026', imgSrc: undefined },
+        { id: 3, title: 'АЛЬФА ЦТФ', description: 'Альфа-Банк, Спортивный хакинг', year: '2026', imgSrc: '/alfactf.png' },
         { id: 2, title: 'ХАКАТОН IT-ЦИФРА.ZONE', description: 'ОЭЗ "Дубна", Хакатон', year: '2024', imgSrc: '/hackaton.png' },
         { id: 1, title: 'НАВИГАТОР ИННОВАТОРА', description: 'Сколково, Предпринимательство', year: '2022', imgSrc: '/sk.png' },
     ];
